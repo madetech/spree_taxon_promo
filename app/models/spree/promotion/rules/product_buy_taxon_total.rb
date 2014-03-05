@@ -8,6 +8,10 @@ module Spree
 
     OPERATORS = ['gt', 'gte']
 
+    def self.description
+      I18n.t('product_buy_taxon_total.name')
+    end
+
     def eligible?(order, options = {})
       item_total = 0.0
       order.line_items.each do |line_item|
