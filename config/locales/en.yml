@@ -8,3 +8,4 @@ en:
       name: Item total from taxon
       description: Order total from specific taxon exceeds amount
   flat_percent_taxon: Flat percent of taxon total
+  flat_percent_exclude_taxon: Flat percent of total excluding taxon
