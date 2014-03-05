@@ -14,7 +14,8 @@ module SpreeTaxonPromo
     end
 
     initializer 'spree.promo.register.taxon_calculators', :after => "spree.promo.register.promotion.calculators"  do |app|
-      app.config.spree.calculators.promotion_actions_create_adjustments += [Spree::Calculator::FlatPercentTaxonTotal, Spree::Calculator::FlatPercentExcludeTaxonTotal]
+      app.config.spree.calculators.promotion_actions_create_adjustments += [Spree::Calculator::FlatPercentTaxonTotal]
+      app.config.spree.calculators.promotion_actions_create_adjustments += [Spree::Calculator::FlatPercentExcludeTaxonTotal]
     end
 
     def self.activate
