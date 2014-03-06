@@ -1,5 +1,5 @@
 module Spree
-  class Calculator::FlatPercentExcludeTaxonTotal < Spree::Calculator::FlatPercentTaxonTotal
+  class Calculator::FlatPercentExcludeTaxonTotal < Calculator::FlatPercentTaxonTotal
     def self.description
       I18n.t(:flat_percent_exclude_taxon)
     end
